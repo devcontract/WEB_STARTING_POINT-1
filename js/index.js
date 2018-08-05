@@ -9,3 +9,4 @@ document.getElementById('raised').innerHTML = "123321";
 document.getElementById('soft').innerHTML = "9876";
 document.getElementById('hard').innerHTML = "44444";
 document.getElementById('tokensold').innerHTML = "443434444";
+document.getElementById('value_token').innerHTML = "4000";
