@@ -1,0 +1,143 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" href="./css/master.css">
+<link rel="stylesheet" href="./css/firstBlock.css">
+<link rel="stylesheet" href="./css/third.css">
+
+<body>
+
+ <div style="min-height: 110px;max-height: 10px;padding-top: 10px;border-top-left-radius: 18px; border-top-right-radius: 18px" class="block border">
+  <div style="display:flex; margin:0 auto; width:1000px;margin-bottom: 10px;" class="">
+
+      <div style="width:400px;margin-left: 65px;text-align:left;" >
+        <span>Raised: <span id="raised"></span> ETH</span>
+      </div>
+
+      <div style="width:400px;margin-left: 70px;text-align:right;">
+        <span>Token Sold: <span id="tokensold"></span> <span id="token_name1" ></span></span>
+      </div>
+  </div>
+
+      <div class="progressB">
+        <div id="1barchik" class="progress-bar" role="progressbar" style="border-radius:14px; background-color:#00BEA3;border:1px solid white" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+      </div>
+
+      <div class="softhard">
+        <span>Soft:<span id="soft"></span> ETH</span>
+        <span class="hard">Hard:<span id="hard"></span> ETH</span>
+
+      </div>
+    </div>
+<div style="min-height: 210px;max-height: 10px;padding-top: 10px;border-top-left-radius: 18px; border-top-right-radius: 18px"
+   class="block">
+    <div class="img_bar">
+      <img style="margin: 25px 0 0 9px;" id="back_ground" src="./img/bckgrnd_sprite.png" alt="">
+      <div style="margin-left:9px;"class="">
+
+
+      <img style="visibility:visible" id="arrLeft" src="./img/arrows/arrLeft.png" alt="">
+      <img style="visibility:visible" id="arrLeftsloj2" src="./img/arrows/arrLeftsloj2.png" alt="">
+      <img style="visibility:visible" id="arrow" src="./img/arrows/arrow.png" alt="">
+      <img style="visibility:visible" id="arrow_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+      <img style="visibility:visible" id="arrow2" src="./img/arrows/arrow.png" alt="">
+      <img style="visibility:visible" id="arrow2_Sloj2" src="./img/arrows/arrowsloj2.png" alt="">
+      <img style="visibility:visible" id="arrRight" src="./img/arrows/arrRight.png" alt="">
+      <img style="visibility:visible;" id="arrRightSloj2" src="./img/arrows/arrRightSloj2.png" alt="">
+  </div>
+      <div class="label">
+
+        <div style="position:relative;left:70px;top:-15px;" class="stage">
+
+
+          <div class="label" id="label1">Stage1</div>
+          <div class="label" id="label2">Stage2</div>
+          <div class="label" id="label3">Stage3</div>
+
+        </div>
+        <div style="position:relative;top:-40px;" id="status">
+          <div class="label" id="label5">Expectation</div>
+          <div class="label" id="label6">Expectation</div>
+          <div class="label" id="label7">Expectation</div>
+          <div class="label" id="label8">SaleFinished</div>
+        </div>
+
+</div>
+</div>
+</div>
+<div style="min-height: 210px;max-height: 10px;padding-top: 10px;border-top-left-radius: 18px; border-top-right-radius: 18px"
+
+class="block">
+      <div class="border"></div>
+      <div class="green_line"><span style="margin-left:10px;color:white"><span style="color:white"id=token_name2> </span> TOKENS PER ETH:</span>
+      </div>
+      <div class="bottom_part">
+        <span>1<span style="font-size:30px;padding-top:10px">ETH</span> = <span id="token_price"></span> <span style="font-size:30px" id="name"></span> <span style="font-size:30px;" id=token_name3> TES</span></span>
+        <div class="sale">
+          <img style="filter:invert(100%);margin-top:-150px;margin-left:60px" src="./img/present.png" alt="present">
+          <span><span id="bonus" style="margin-left:10px;"></span> <span id="token_name4"></span> </span>
+
+        </div>
+      </div>
+
+
+   </div>
+  <!-- end of the last BLock withkak tokens per eth-->
+
+    <!--Last Block with calculator-->
+    <div style="min-height: 400px;max-height: 400px;border-bottom-left-radius: 18px;  border-bottom-right-radius: 18px;" class="block border">
+      <div class="last_block">
+        <div  id="digit_display">
+          <div style="margin-top:-20px;margin-bottom:20px" class="">
+           <a>SUM ETH <a class="test" href="JavaScript:newPopup('./info.html');"> <i id="minVal" style="font-size:18px; color:#34f6e5" class="fa" title="minimum amount : 0.005 ETH">&#xf05a;</i></a></a> <br>
+          </div>
+           <input id="input_value"  style="text-align:right" type="text" maxlength="21" value="1">
+
+          <span class="span_string">=</span>
+          <span class="span_string" id="token_calc"> </span>
+          <a href="./pur_tok/pur_tok.html" name="button" id="buy_button">BUY</a>
+        </div>
+      </div>
+  </div>
+  <!--Last Block with calculator-->
+
+
+
+
+    <script type="text/javascript" src="./js/index.js" async></script>
+    <script type="text/javascript" src="./js/web3.min.js"></script>
+
+    <br /><br />
+    Your account address (use a test account) from which to interact with the contract:<br />
+    <input id='fromAddress' placeholder='from address' size='50'>
+
+    <br /><br />
+    Enter an integer (uint) and press the button.<br />
+    This will execute the contract method.<br />
+    <input id='valStore' placeholder='value' ><button id="valStoreBtn" onclick="tes()">store</button>
+
+    <br /><br />
+</div>
+    </div>
+
+    <script type="text/javascript">
+    // Popup window code
+    function newPopup(url) {
+      popupWindow = window.open(
+        url, 'popUpWindow', 'height=300,width=400,left=200,top=200,resizable=no,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+    }
+  </script>
+</body>
+
+</html>

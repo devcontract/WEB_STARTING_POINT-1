@@ -1,1 +1,1 @@
-# WEB_STARTING_POINT
+# web

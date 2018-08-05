@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/pur_tok.css">
+</head>
+
+<body>
+
+
+  <!-- side nav bar -->
+
+
+
+  <!-- side nav bar -->
+
+  <div class="pur_tok">
+    <div class="purdet">
+      <span style="font-weight:bold">Purchase details</span>
+    </div>
+
+  <!-- price stage conifg -->
+
+  <div class="pricestage">
+        <div class="pstage1" id="stage1">
+          <span id=""> Price: stage1:</span>
+          <span id=""> 14000 </span>
+          <span id=""> KAK </span>
+        </div>
+    <div class="pstage1" id="stage2">
+      <span id=""> Price: stage2:</span>
+      <span id=""> 20000 </span>
+      <span id=""> KAK </span>
+    </div>
+
+    <div class="pstage1" id="stage3">
+      <span id=""> Price: stage3: </span>
+      <span id=""> 10000  </span>
+      <span id=""> KAK </span>
+    </div>
+<button type="button" name="button" onclick="stageColor()"></button>
+<!--    <div class="pricestage">
+      <div class="pstage1">
+        <p id="stage1"> Price: stage1: </p>
+        <p id="stage2"> Price: stage2: </p>
+        <p id="stage3"> Price: stage3: </p>
+      </div>
+  <div class="pstage2">
+    <p id="pricestage1" > 14000 </p>
+    <p id="pricestage2" > 10000 </p>
+    <p id="pricestage3" > 6000  </p>
+  </div>
+
+  <div class="usd">
+    <p id="pricestaget1"> KAK </p>
+    <p id="pricestaget2"> KAK </p>
+    <p id="pricestaget3"> KAK </p>
+  </div>-->
+</div>
+
+
+
+    <div style="display:flex;" class="ethprice">
+      <span style=""> <input id="purchase_details_input" size="10" type="text" name="" value="1" title="minimum amount : 0.005 ETH"> </span><span style="margin-right:5px">ETH</span><span style="margin-right:5px">=</span><div id="tokprice" style="word-wrap:break-word; margin-right:5px">14000</div>KAK
+    </div>
+    <div class="mineth">
+      <span style="margin-right:10px">1ETH</span> miniumum investment
+    </div>
+
+    <div style="margin-top:30px" class="paymentadd">
+      <h1 >Payment Address</h1>
+      <div class="adr">
+        <input id="inpaymentadd" type="text" name="address" value="0x66a945a11483e05bedb37474ca29ad6e8656c4f4" readonly onmousedown="return false"  autocomplete=off>
+</div>
+<div class="copybtn">
+<button id="copybtn" type="button" name="copy" onclick="copyClip()">COPY</button>
+</div>
+<div class="alert">
+<p class="alert">Do not send ETH from an exchange like (coinbase) to this address. You will loose your tokens.</p>
+</div>
+    </div>
+
+    <div class="limitprice">
+      <div class="gaslimit">
+        <p id="gaslimit">GAS limit:</p>
+        <span id="glimval">22000</span>
+      </div>
+      <div class="gasprice">
+        <p id="gasprice">GAS price:</p>
+        <span id="gprice">100</span> <span>Gwei</span>
+      </div>
+
+    </div>
+
+
+    <div class="button">
+
+      <a id="myetherwallet" type="button" href="https://etherscan.io" name="myetherwallet" onclick="">MYETHERWALLET</a>
+      <a id="metamask" type="button" href="https://etherscan.io"  name="metamask">METAMASK</a>
+    </div>
+  </div>
+
+
+
+
+<script src="./js/master.js"></script>
+
+  <script type="text/javascript">
+  function copyClip() {
+    var copyText = document.getElementById('inpaymentadd');
+    copyText.select();
+    document.execCommand("copy");
+  }
+</script>
+</body>
+
+</html>
